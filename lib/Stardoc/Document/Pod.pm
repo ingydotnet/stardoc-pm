@@ -9,7 +9,6 @@ use Mouse;
 
 use Template::Toolkit::Simple;
 use IO::All;
-use XXX;
 
 has module => (
     is => 'ro',

@@ -8,6 +8,8 @@ readme_from 'lib/Stardoc.pod';
 
 requires 'Mouse';
 requires 'YAML::XS';
+requires 'IO::All';
+requires 'Template::Toolkit::Simple';
 
 WriteAll;
 

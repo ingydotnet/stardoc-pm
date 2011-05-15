@@ -8,7 +8,7 @@
 package Stardoc;
 use 5.008003;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 1;
 
@@ -37,5 +37,3 @@ sections. These sections are generated from the information provided in the
 special Stardoc section at the top.
 
 The Stardoc section starts with C<##> and contains a YAML map or metadata.
-
-=cut

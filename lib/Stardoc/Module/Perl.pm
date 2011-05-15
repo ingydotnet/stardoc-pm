@@ -10,7 +10,6 @@ extends 'Stardoc::Module';
 
 use IO::All;
 use YAML::XS;
-use XXX;
 
 has meta => (
     is => 'ro',

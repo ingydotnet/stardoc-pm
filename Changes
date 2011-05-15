@@ -1,4 +1,10 @@
 ---
+version: 0.02
+date:    Sun May 15 16:36:41 EST 2011
+changes:
+- Remove XXX
+- Add Makefile.PL dependencies.
+---
 version: 0.01
 date:    Sun May 15 16:15:38 EST 2011
 changes:
