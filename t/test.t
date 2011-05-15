@@ -1,5 +1,5 @@
 use Test::More tests => 1;
-use Test::Differences; *is = \&eq_or_diff; unified_diff;
+# use Test::Differences; *is = \&eq_or_diff; warn "X"x80; unified_diff;
 
 use Stardoc::Convert;
 use IO::All;

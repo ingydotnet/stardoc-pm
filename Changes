@@ -1,4 +1,9 @@
 ---
+version: 0.03
+date:    Sun May 15 23:46:56 EST 2011
+changes:
+- Don't ship with Test::Differences in tests.
+---
 version: 0.02
 date:    Sun May 15 16:36:41 EST 2011
 changes:

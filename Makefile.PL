@@ -1,5 +1,3 @@
-use lib 'lib';
-
 use inc::Module::Install;
 
 stardoc_make_pod;
@@ -12,5 +10,3 @@ requires 'IO::All';
 requires 'Template::Toolkit::Simple';
 
 WriteAll;
-
-# finalize;
