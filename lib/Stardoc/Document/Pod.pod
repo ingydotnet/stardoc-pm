@@ -17,6 +17,21 @@ use constant encoding => <<'...';
 =encoding [% encoding %]
 ...
 
+use constant see => <<'...';
+
+=head1 SEE ALSO
+
+=over
+[% FOR also = see %]
+
+=item *
+
+L<[% also %]>
+[% END %]
+
+=back
+...
+
 use constant author => <<'...';
 
 =head1 AUTHOR

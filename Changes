@@ -1,4 +1,10 @@
 ---
+version: 0.04
+date:    Mon May 16 23:53:45 EST 2011
+changes:
+- Add SEE ALSO support
+- Use Package for module install
+---
 version: 0.03
 date:    Sun May 15 23:46:56 EST 2011
 changes:

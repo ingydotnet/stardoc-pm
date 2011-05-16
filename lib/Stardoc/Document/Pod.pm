@@ -20,7 +20,7 @@ my $layout = [
     'synopsis',
     'description',
     'other',
-    {name => 'see_also', requires => ['see_also']},
+    {name => 'see', requires => ['see']},
     {name => 'author', requires => ['author']},
     {name => 'license', requires => ['copyright']},
     {name => 'cut'},
@@ -82,6 +82,18 @@ use constant status => <<'...';
 
 use constant encoding => <<'...';
 =encoding [% encoding %]
+...
+
+use constant see => <<'...';
+=head1 SEE ALSO
+
+=over
+[% FOR also = see %]
+=item *
+
+L<[% also %]>
+[% END %]
+=back
 ...
 
 use constant author => <<'...';

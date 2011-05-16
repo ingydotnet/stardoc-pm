@@ -36,7 +36,7 @@ has description => (
 has usage => (
     is => 'rw',
 );
-has see_also => (
+has see => (
     is => 'rw',
 );
 has author => (
@@ -71,6 +71,9 @@ sub merge_meta {
         my $val = $data->{$key};
         if ($key eq 'author') {
             $meta->{author} = $self->parse_author($val);
+        }
+        elsif ($key eq 'see') {
+            $meta->{see} = ref($val) ? $val : [$val];
         }
         else {
             $meta->{$key} = $data->{$key};
