@@ -1,0 +1,5 @@
+- Add test for
+
+    =head1 FOO NAME
+
+  - make sure it doesn't go to top as the NAME section
