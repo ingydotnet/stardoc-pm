@@ -1,4 +1,9 @@
 ---
+version: 0.11
+date:    Wed May 18 00:57:38 EST 2011
+changes:
+- VERSION confusion. Need to be above 0.10.
+---
 version: 0.05
 date:    Tue May 17 22:25:22 EST 2011
 changes:
