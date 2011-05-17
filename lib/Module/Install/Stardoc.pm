@@ -13,11 +13,12 @@ use 5.008003;
 use Module::Install::Base;
 use File::Find;
 
-use vars qw($VERSION @ISA);
+use vars qw(@ISA);
 BEGIN {
-    $VERSION = '0.10';
-    @ISA     = 'Module::Install::Base';
+    @ISA = 'Module::Install::Base';
 }
+
+my @clean;
 
 sub stardoc_make_pod {
     my $self = shift;
@@ -32,12 +33,19 @@ sub stardoc_make_pod {
     for my $pm (@pms) {
         (my $pod = $pm) =~ s/\.pm$/.pod/ or die;
         my $doc = Stardoc::Convert->perl_file_to_pod($pm) or next;
-        my $old = -e $pod ? io->($pod)->all : '';
+        push @clean, $pod;
+        my $old = -e $pod ? io($pod)->all : '';
         if ($doc ne $old) {
             print "Creating $pod from $pm\n";
             io($pod)->print($doc);
         }
     }
+}
+
+sub stardoc_clean_pod {
+    my $self = shift;
+    return unless $self->is_admin;
+    $self->clean_files(join ' ', @clean);
 }
 
 1;
@@ -50,9 +58,14 @@ In Makefile.PL:
 
     stardoc_make_pod;
     all_from 'lib/Foo.pm';
+    stardoc_clean_pod;
 
 =head1 DESCRIPTION
 
-This command generates a pod file from every .pm file in your lib/ directory that contains Stardoc documentation.
+The C<stardoc_make_pod> command generates a pod file from every .pm file in
+your lib/ directory that contains Stardoc documentation.
+
+The C<stardoc_clean_pod> command tells C<make clean> to remove the generated
+pod files.
 
 =cut

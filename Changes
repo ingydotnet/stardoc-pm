@@ -1,4 +1,10 @@
 ---
+version: 0.05
+date:    Tue May 17 22:25:22 EST 2011
+changes:
+- use inc::Package
+- support stardoc_clean_pod
+---
 version: 0.04
 date:    Mon May 16 23:53:45 EST 2011
 changes:

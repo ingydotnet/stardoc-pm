@@ -1,4 +1,4 @@
-use inc::Module::Install; pkg;
+use inc::Package;
 
 requires 'Mouse';
 requires 'YAML::XS';

@@ -8,7 +8,7 @@
 package Stardoc;
 use 5.008003;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 1;
 
