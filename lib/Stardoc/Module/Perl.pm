@@ -131,6 +131,9 @@ sub make_comment_sections {
         if ($text =~ s/(^\w+:\s.*?\n)(\.\.\.\s*\n|\n\s*|\z)//s) {
             push @sections, $self->make_meta_data($1);
         }
+        elsif ($text =~ s/^(=\w.*)//s) {
+            push @sections, $self->make_pod_sections($1);
+        }
         else {
             die;
         }

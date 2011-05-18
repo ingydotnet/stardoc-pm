@@ -1,4 +1,10 @@
 ---
+version: 0.12
+date:    Wed May 18 18:14:14 EST 2011
+changes:
+- Allow pod in comments
+- Switch to Module::Package
+---
 version: 0.11
 date:    Wed May 18 00:57:38 EST 2011
 changes:

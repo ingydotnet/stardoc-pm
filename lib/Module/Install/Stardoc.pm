@@ -10,13 +10,9 @@ use strict;
 use warnings;
 use 5.008003;
 
-use Module::Install::Base;
-use File::Find;
+use Module::Install::Base; use vars qw(@ISA); BEGIN { @ISA = 'Module::Install::Base' }
 
-use vars qw(@ISA);
-BEGIN {
-    @ISA = 'Module::Install::Base';
-}
+use File::Find;
 
 my @clean;
 

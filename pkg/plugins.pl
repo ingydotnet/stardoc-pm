@@ -30,4 +30,6 @@ require Module::Install::Win32
     unless $INC{'Module/Install/Win32.pm'};
 require Module::Install::WriteAll
     unless $INC{'Module/Install/WriteAll.pm'};
+require Module::Package
+    unless $INC{'Module/Package.pm'};
 1;

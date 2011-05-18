@@ -1,4 +1,4 @@
-use inc::Package;
+use inc::Module::Package;
 
 requires 'Mouse';
 requires 'YAML::XS';
