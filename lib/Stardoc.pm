@@ -8,7 +8,12 @@
 package Stardoc;
 use 5.008003;
 
-our $VERSION = '0.12';
+our $VERSION = '0.13';
+
+use IO::All 0.41;
+use Mouse 0.92;
+use Template::Toolkit::Simple 0.13;
+use YAML::XS 0.35;
 
 1;
 
