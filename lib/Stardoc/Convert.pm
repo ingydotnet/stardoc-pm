@@ -1,5 +1,6 @@
 ##
 # name:      Stardoc::Convert
+# abstract:  Convert Stardoc Perl modules to pod
 # author:    Ingy döt Net <ingy@cpan.org>
 # copyright: 2011
 # license:   perl

@@ -1,5 +1,6 @@
 ##
 # name:      Stardoc::Module::Perl
+# abstract:  Stardoc Perl Module
 # author:    Ingy döt Net <ingy@cpan.org>
 # copyright: 2011
 # license:   perl

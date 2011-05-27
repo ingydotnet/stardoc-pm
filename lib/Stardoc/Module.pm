@@ -1,5 +1,6 @@
 ##
 # name:      Stardoc::Module
+# abstract:  Stardoc Module base class
 # author:    Ingy döt Net <ingy@cpan.org>
 # copyright: 2011
 # license:   perl

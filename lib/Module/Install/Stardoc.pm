@@ -6,9 +6,9 @@
 # license:   perl
 
 package Module::Install::Stardoc;
+use 5.008003;
 use strict;
 use warnings;
-use 5.008003;
 
 use Module::Install::Base;
 use vars qw'@ISA $VERSION';

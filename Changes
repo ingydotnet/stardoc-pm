@@ -1,4 +1,10 @@
 ---
+version: 0.13
+date:    Sat May 28 03:08:07 EST 2011
+changes:
+- Upgrade Module::Package with deps_list
+- Add $VERSION to Module::Install::Stardoc
+---
 version: 0.12
 date:    Wed May 18 18:14:14 EST 2011
 changes:

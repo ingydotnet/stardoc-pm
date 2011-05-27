@@ -1,5 +1,6 @@
 ##
 # name:      Stardoc::Document::Pod
+# abstract:  Stardoc Pod Generator
 # author:    Ingy döt Net <ingy@cpan.org>
 # copyright: 2011
 # license:   perl
