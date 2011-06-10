@@ -53,7 +53,8 @@ sub BUILD {
 }
 
 my $pod_re = qr/^=\w+.*?(?:^=cut\s*\n|(?=^=\w)|\z)/ms;
-my $star_re = qr/^##.*\n(?:#.*\n)*/m;
+# XXX - Need to account for perlcritic ## at some point.
+my $star_re = qr/^##\s.*\n(?:#.*\n)*/m;
 my $end_re = qr/^__(?:END|DATA)__.*/ms;
 
 sub parse {

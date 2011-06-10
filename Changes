@@ -1,4 +1,9 @@
 ---
+version: 0.17
+date:    Fri Jun 10 22:02:33 EST 2011
+changes:
+- Only act on ^##\s.* instead of ^##.*
+---
 version: 0.16
 date:    Wed Jun  1 20:13:25 EST 2011
 changes:
