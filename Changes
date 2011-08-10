@@ -1,4 +1,9 @@
 ---
+version: 0.18
+date:    Wed Aug 10 18:08:34 CEST 2011
+changes:
+- Make M:I:SD version match SD version.
+---
 version: 0.17
 date:    Fri Jun 10 22:02:33 EST 2011
 changes:

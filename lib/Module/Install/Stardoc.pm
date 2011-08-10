@@ -14,7 +14,7 @@ use Module::Install::Base;
 use vars qw'@ISA $VERSION';
 BEGIN {
     @ISA = 'Module::Install::Base';
-    $VERSION = '0.13';
+    $VERSION = '0.18';
 }
 
 use File::Find;
@@ -27,10 +27,13 @@ sub stardoc_make_pod {
     require Stardoc::Convert;
     eval "use IO::All; 1" or die $@;
 
-    my @pms;
-    File::Find::find(sub {
-        push @pms, $File::Find::name if /\.pm$/;
-    }, 'lib');
+    my @pms = @_;
+
+    if (not @pms) {
+        File::Find::find(sub {
+            push @pms, $File::Find::name if /\.pm$/;
+        }, 'lib');
+    };
     for my $pm (@pms) {
         (my $pod = $pm) =~ s/\.pm$/.pod/ or die;
         my $doc = Stardoc::Convert->perl_file_to_pod($pm) or next;

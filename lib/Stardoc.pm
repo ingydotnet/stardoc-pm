@@ -8,7 +8,7 @@
 package Stardoc;
 use 5.008003;
 
-our $VERSION = '0.17';
+our $VERSION = '0.18';
 
 use IO::All 0.41;
 use Mouse 0.93;
